@@ -1,0 +1,13 @@
+#items{
+    width: 59%;
+    display: inline-block;
+}
+
+#basket-container{
+    width: 20%;
+    display: inline-block;
+    border-radius: 10px;
+    background: #58ACFA;
+    box-shadow: 10px 10px 5px black;
+    align: center;
+}
