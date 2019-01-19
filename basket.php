@@ -12,7 +12,7 @@ function delFromBasket($id) {
 }
 function addToOrders() {
     if ($_SESSION['logged_in_user']) {
-        $orders = unserialize("./private/".$_SESSION['logged_in_user']);
+        $orders = unserialize(file_get_contents("./private/".$_SESSION['logged_in_user']));
         foreach ($_SESSION['basket'] as $item) {
             $orders[] = $item;
         }
